@@ -11,11 +11,12 @@ const TodoMain = () => {
       ? JSON.parse(localStorage.getItem("todoList"))
       : [];
   });
-  //  어떤 특정한 데이터가 변경되었을때 실행할 event를 설정
+
   const saveStorage = () => {
     localStorage.setItem("todoList", JSON.stringify(todoList));
     localStorage.setItem("KOREA", "대한민국");
   };
+  // 어떤 특정한 데이터가 변경되었을때 실행할 event 를 설정
   useEffect(saveStorage, [todoList]);
 
   const todoInsert = () => {
@@ -25,9 +26,9 @@ const TodoMain = () => {
     ];
     setTodoList(newTodoList);
   };
-  const todoComplate = (seq) => {
+  const todoComplete = (seq) => {
     const result = todoList.map((item) => {
-      // todoList 중에 선택한 item이면
+      // todoList 중에 선택한 item 이면
       if (item.seq === seq) {
         return { ...item, complete: !item.complete };
       }
@@ -55,8 +56,8 @@ const TodoMain = () => {
       />
       <TodoList
         todoList={todoList}
-        todoComplete={todoComplate}
-        todoDeldte={todoDelete}
+        todoComplete={todoComplete}
+        todoDelete={todoDelete}
       />
     </div>
   );

@@ -4,17 +4,20 @@ const TodoItem = ({ item, todoComplete, todoDelete }) => {
     todoComplete(seq);
   };
   const onDeleteClick = (seq) => {
-    if (window.confirm("Todo 데이터를 삭제할까요?")) {
+    if (window.confirm("TODO 데이터를 삭제할까요?")) {
       todoDelete(seq);
     }
   };
 
   return (
     <div className="todoItem">
-      <div className="delete" onClick={() => onDeleteClick(item.ewq)}>
+      <div className="delete" onClick={() => onDeleteClick(item.seq)}>
         &times;
       </div>
-      <div className={item.complete ? "content ok" : "content"}>
+      <div
+        className={item.complete ? "content ok" : "content"}
+        onClick={() => onCompleteClick(item.seq)}
+      >
         {item.todo}
       </div>
       <div

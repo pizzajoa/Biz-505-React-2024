@@ -27,6 +27,7 @@
     border-radius: 50px;
   }
 }
+
 .todoItem .content.ok {
   color: #999;
   text-decoration: line-through;

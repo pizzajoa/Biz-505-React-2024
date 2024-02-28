@@ -28,4 +28,5 @@ yarn create-next-app []
 ```
 
 명령 실행 후 옵션 선택하기
-![alt text(명령 실행 후 옵션)](images/image.png)
+
+![alt text](image.png)

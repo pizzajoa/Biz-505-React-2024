@@ -1,7 +1,7 @@
-// import AsideList from "@/comps/AsideList";
 import AsideList from "@/comps/AsideList";
 import styles from "./blog.module.css";
-// blog/latout.js
+
+// blog/layout.js
 export default ({ children }) => {
   return (
     <main className={styles.main}>

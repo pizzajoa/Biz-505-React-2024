@@ -1,5 +1,4 @@
-import styles from "./blog.module.css";
 // blog/page.js
 export default () => {
-  return <h1>Blog Main</h1>;
+  return <h1>BLog Main</h1>;
 };

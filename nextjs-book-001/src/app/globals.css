@@ -83,10 +83,6 @@
   margin: 0;
 }
 
-html {
-  height: 100vh;
-}
-
 html,
 body {
   max-width: 100vw;
@@ -94,24 +90,7 @@ body {
 }
 
 body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
   color: rgb(var(--foreground-rgb));
-}
-
-header {
-  height: 20vh;
-  background-image: url("../images/2024_2.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-}
-footer {
-  background-color: #ccc;
-  color: white;
-  text-align: center;
-  padding: 0.7rem;
 }
 
 a {

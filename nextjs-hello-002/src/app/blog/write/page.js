@@ -8,10 +8,10 @@ const FORM_NAME = {
 };
 
 export default () => {
-  // form 의 input에 저장된 값들을 함수에 전달해주는 매개변수가 필요
-  // formDate 에 input에 입력한 값들이 담겨서 전달된다
+  // form 의 input 에 입력한 값들을 함수에 전달해주는 매개변수가 필요
+  // formData 에 input 에 입력한 값들이 담겨서 전달된다
   const actionHandler = async (formData) => {
-    "use server"; // 이 함수의 동작은 마치 서버(back-end)의 요소처럼 동작하라
+    "use server"; // 이 함수의 동작은 마치 서버(back-end) 의 요소처럼 동작하라
 
     const data = {
       category: formData.get(FORM_NAME.CATEGORY),
@@ -33,7 +33,7 @@ export default () => {
       <textarea
         placeholder="내용"
         rows="20"
-        name="content"
+        name={FORM_NAME.CONTENT}
       ></textarea>
       <input
         className={styles.submit}

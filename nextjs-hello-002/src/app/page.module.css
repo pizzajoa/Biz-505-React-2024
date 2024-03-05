@@ -2,10 +2,12 @@
   flex: 1;
   display: flex;
 }
+
 .aside {
   flex: 1;
-  background-color: #ccc;
+  background-color: #eee;
 }
+
 .section {
   flex: 3;
 }
